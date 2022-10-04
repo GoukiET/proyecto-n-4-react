@@ -1,6 +1,7 @@
 import { db } from "../../firebase";
 import { useEffect, useState } from "react";
 import { collection, getDocs } from 'firebase/firestore';
+
 const Menu = () => {
     const [ menu, setMenu ] = useState([]) //trae el menu de firestore
 
@@ -26,23 +27,28 @@ const Menu = () => {
 
     return (
         <div>
-            <div className="col-md-4">
+            <div>
                 <h2 className="text-center">Menu</h2>
-                <div className="container card tamaño">
-                    {
-                        menu.map(carta => (
-                            <div key={carta.id}>
-                                <img src={carta.imageUrl} className="card-img-top" alt="..." />
-                                <div className="card-body">
-                                    <h5 className="card-title">{carta.name}</h5>
-                                    <p className="card-text">{carta.Ingredientes}</p>
-                                    <p className="card-footer">Precio: ${carta.price}</p>
-                                </div>
+                <div className="container mt-5">
+                    <div class="row gx-5">
+                        <div className="p-3 col-3">
+                            <div className="card">
+                                {
+                                    menu.map(carta => (
+                                        <div key={carta.id}>
+                                            <img src={carta.imageUrl} className="card-img-top" alt="..." />
+                                            <div className="card-body">
+                                                <h5 className="card-title">{carta.name}</h5>
+                                                <p className="card-text">{carta.Ingredientes}</p>
+                                                <p className="card-footer">Precio: ${carta.price}</p>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
                             </div>
-                        ))
-                    }
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     )
