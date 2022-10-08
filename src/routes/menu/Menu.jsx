@@ -1,7 +1,7 @@
 import { db } from "../../firebase";
 import { useEffect, useState } from "react";
 import { collection, getDocs } from 'firebase/firestore';
-
+import { Card } from "../../components/card/Card";
 const Menu = () => {
     const [ menu, setMenu ] = useState([]) //trae el menu de firestore
 
@@ -28,29 +28,11 @@ const Menu = () => {
     return (
 
         <div>
-            <h2 className="text-center">Menu</h2>            
-                                {
-                                    menu.map(carta => (
-                                        <div key={carta.id}>
-                                            <div className="container mt-4">   
-                                                <div className="row">
-                                                    <div className="col-6">                      
-                                                        <div className="card">
-                                                            <img src={carta.imageUrl} className="card-img-top" alt="..." />
-                                                            <div className="card-body">
-                                                                <h5 className="card-title">{carta.name}</h5>
-                                                                <p className="card-text">{carta.Ingredientes}</p>
-                                                                <p className="card-footer">Precio: ${carta.price}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>                                        
-                                            </div>
-                                        </div>
-                                    ))
-                                }
-                        
-           
+            <h2 className="text-center mb-5">Menu</h2>            
+
+           {
+            menu.map(carta => <Card datos={carta}/>)
+           }
         </div>
 
 

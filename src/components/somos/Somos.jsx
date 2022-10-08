@@ -3,8 +3,8 @@
 export const Somos = () => {
   return (
     <div>
-        <h2 className="text-center mt-4">Quienes Somos</h2>
-        <div className="container">
+        <h2 className="text-center mt-5 mb-3 ">¿Quiénes Somos?</h2>
+        <div className="container p-3">
           <p className="history">
               Hace mas de veinte años, días en que recién comenzaba el auge de la comida rápida y con reparto a domicilio, fomentado esto por la escasez de tiempo de las personas Catus aprovecha esa oportunidad para introducirse en el negocio de la alimentación, con una de las más exquisitas recetas de pizzas que se puedan probar. En ella se destaca su masa y la forma particular de prepáralas diferenciándose de cualquier otra.
               Gato Catus Pizza Restaurant desde un principio Catus ha marcado una gran diferencia en su servicio, y esto es lo que siempre hemos tenido muy en claro como las directrices de la empresa, en donde se destacan principalmente.
