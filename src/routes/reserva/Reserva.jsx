@@ -6,7 +6,7 @@ export const Reserva = () => {
           <div className="container text-center">
               <div className="row">
                   <div className="col">
-                      <div className="container mt-5 bg-light p-5">
+                      <div className="container mt-5 p-5">
                           <h3>Reserva con nosotros</h3>
                           <p>A partir de tu contacto, nos comunicaremos contigo para revisar fechas y disponibilidad de horarios.
                           </p>

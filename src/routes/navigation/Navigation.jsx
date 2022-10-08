@@ -1,10 +1,10 @@
 import { Fragment } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-
+import './navigation.css'
 export const Navigation = () => {
   return (
     <Fragment>
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
@@ -19,7 +19,7 @@ export const Navigation = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <Link to="/" className="nav-link active">
+              <Link to="/" className="nav-link">
                 Inicio
               </Link>
               
