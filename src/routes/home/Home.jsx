@@ -4,8 +4,7 @@ import { Somos } from '../../components/somos/Somos'
 
 export const Home = () => {
   return (
-    <div>
-      
+    <div>      
         <Banner />
         <Somos />
         <Outlet />

@@ -26,31 +26,6 @@ const Menu = () => {
     }, [])
 
     return (
-/*         <div>
-            <h2 className="text-center">Menu</h2>
-            <div className="row row-cols-1 row-cols-md-3 g-4">               
-                
-                    <div class="col">
-                        
-                            <div className="card">
-                                {
-                                    menu.map(carta => (
-                                        <div key={carta.id}>
-                                            <img src={carta.imageUrl} className="card-img-top" alt="..." />
-                                            <div className="card-body">
-                                                <h5 className="card-title">{carta.name}</h5>
-                                                <p className="card-text">{carta.Ingredientes}</p>
-                                                <p className="card-footer">Precio: ${carta.price}</p>
-                                            </div>
-                                        </div>
-                                    ))
-                                }
-                            </div>
-                        
-                    </div>
-                
-            </div>
-        </div> */
 
         <div>
             <h2 className="text-center">Menu</h2>            
